@@ -52,6 +52,7 @@ class A
     # add multiple types with their own blocks (you can also use an array of types as a key)
     add_operator :+, { String => lambda { |value| @a + value },
                        [Fixnum, Float] => lambda { |value| @b + value } }
+end
 ```
 
 ## Development
@@ -62,4 +63,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/flexible_operators.
+Bug reports and pull requests are welcome on GitHub at https://github.com/poochiethecat/flexible_operators.
